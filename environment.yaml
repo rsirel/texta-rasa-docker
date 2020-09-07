@@ -1,0 +1,13 @@
+name: texta-rasa
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - pip
+  - spacy
+  - supervisor
+  - pip:
+      - rasa
+      - https://pypi.texta.ee/spacy_et_model/et_model-latest.tar.gz

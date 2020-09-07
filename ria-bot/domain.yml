@@ -1,0 +1,237 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- tere
+- head_aega
+- haigekassast_ravikindlustuskaardi_tellimine
+- haigekassas_ravikindlustuskaardi_olemasolu
+- haigekassas_töövõimetuslehe_esitamine
+- haigekassas_haiguslehtede_esitamise_õigused_puuduvad
+- haigekassas_haigusraha_arvelduskonto_muutmine
+- kas_oled_robot
+- out_of_scope
+- trigger_rephrase
+- isapuhkuse_taotlus
+- aitäh
+- EHISes_andmete_muutmine
+- EHISes_lapse_andmete_vaatamine
+- EHISest_inglisekeelne_tunnistus
+- EHISest_lõputunnistuste_asukoht_ja_salvestamine
+- EHISest_kutsetunnistuse_asukoht_ja_salvestamine
+- innove_eesti_keele_tasemeeksamile_registreerimine
+- innove_eesti_keele_tasemeeksami_andmete_vaatamine
+- innove_eesti_keele_tasemeeksami_tulemused_puuduvad
+- innove_kodakondsuseksamile_registreerimine
+- innove_e-tunnistuse_testi_tulemuste_asukoht
+- innove_e-tunnistuse_testi_tulemused_puuduvad
+- maanteeametis_juhilubade_pikendamine
+- maanteeametis_juhilubade_ja_tervisetõendi_andmed
+- ID-kaart_juhilubade_asemel
+- RIKi_notariaalsete_dokumentide_asukoht
+- RIKi_kinnistu_andmete_asukoht
+- RIKis_kinnistu_andmed_puuduvad
+- RIAs_elukoha_andmete_muutmine
+- RIAs_enda_või_lapse_passi_andmed
+- RIAs_lapse_andmed_puuduvad_või_on_valed_rahvastikuregistris
+- Sotsiaalkindlustusameti_A1_tõendi_esitamisel_viga
+- Sotsiaalkindlustusameti_A1_tõendi_taotlemine
+- Sotsiaalkindlustusametis_pensioni_suuruse_vaatamine
+- Sotsiaalkindlustusametis_muu_küsimus_pensioni_kohta
+- Sotsiaalkindlustusametis_kuidas_arvutada_minu_pensionit_tulevikus
+- Sotsiaalkindlustusametile_puhkusetasu_või_keskmise_töötasu_hüvitamise_taotlusel_andmete_muutmine
+responses:
+  utter_tere:
+  - text: Tere! Kuidas saan ma kasulik olla?
+  utter_head_aega:
+  - text: Nägemist!
+  utter_kas_oled_robot:
+  - text: See on keeruline küsimus, kuid niipalju võin vihjata, et minu loomisel oli
+      ikka inimkäsi ka mängus ;)
+  utter_haigekassast_ravikindlustuskaardi_tellimine:
+  - text: 'Euroopa ravikindlustuskaarti on võimalik tellida läbi eesti.ee portaali
+      minnes: "E-teenused - Kodanikule - Tervis ja tervisekaitse - Euroopa ravikindlustuskaardi
+      tellimine" või [siin] (https://www.eesti.ee/est/teenused/kodanik/tervis_ja_tervisekaitse/euroopa_ravikindlustuskaardi_tellimine
+      )   Lisaküsimuste korral palun pöörduge Eesti Haigekassa poole infotelefonil
+      669 6630 või e-posti aadressil info@haigekassa.ee.'
+  utter_haigekassas_ravikindlustuskaardi_olemasolu:
+  - text: Kahjuks Riigi Infosüsteemi Amet kui eesti.ee portaali haldaja ei oma andmeid
+      Teie esitatud taotluste osas. Palun pöörduge abi saamiseks teenuse haldaja,
+      Eesti Haigekassa poole infotelefonil +372 669 6630 (E 8.30–18.00; T, K, N 8.30–16.30;
+      R 8.30–14.00) või e-posti aadressil info@haigekassa.ee.
+  utter_haigekassas_töövõimetuslehe_esitamine:
+  - text: 'Töövõimetuslehti saab ettevõtte esindaja täiendada minnes: "E-teenused
+      - Ettevõtjale - Töökeskkond ja personal - Töövõimetuslehtede täiendamine" ehk
+      [siin](https://www.eesti.ee/est/teenused/ettevotja/tookeskkond_ja_personal_1/toovoimetuslehtede_taiendamine).
+      Palun kontrollige, et Teie roll oleks asutus – esindaja.'
+  utter_haigekassas_haiguslehtede_esitamise_õigused_puuduvad:
+  - text: 'Ilmselt on teil vaja riigiportaalis administraatori õiguseid. Selleks,
+      et saaksime riigiportaalis eesti.ee määrata Teie ettevõttele/asutusele administraatori
+      õiguseid, palume Teie ettevõtte/asutuse poolt täita [taotlus](https://www.ria.ee/sites/default/files/content-editors/riigiportaal/administraatori_taotlus.doc).
+      Taotlus peab olema allkirjastatud allkirjaõigusliku isiku/isikute poolt. Taotluse
+      võib saata digitaalselt allkirjastatuna (digidoc) help@ria.ee või postiga: Riigi
+      Infosüsteemi Amet Pärnu mnt 139a, 15169, Tallinn, Eesti.'
+  utter_haigekassas_haigusraha_arvelduskonto_muutmine:
+  - text: "Haigekassa arvelduskontot saate muuta või määrata minnes: „E-teenused –\
+      \ Kodanikule – Tervis ja tervisekaitse – Minu arvelduskonto ja andmed Haigekassas“\
+      \ või [siin](https://www.eesti.ee/est/teenused/kodanik/tervis_ja_tervisekaitse/isiku_andmed_2).\n\
+      Abi saamiseks palun pöörduge teenuse haldaja, Eesti Haigekassa poole infotelefonil\
+      \ +372 669 6630 (E 8.30–18.00; T, K, N 8.30–16.30; R 8.30–14.00) või e-posti\
+      \ aadressil info@haigekassa.ee."
+  utter_isapuhkuse_taotlus:
+  - text: "Puhkusetasu saab taotleda ettevõtte esindaja minnes \"Avaleht - Minu asjad\
+      \ - E-teenused - Ettevõtjale - Töökeskkond ja \tpersonal - Taotlus puhkusetasu\
+      \ ja keskmise töötasu hüvitamiseks\" või [siin](https://www.eesti.ee/est/teenused/ettevotja/tookeskkond_ja_personal_1/taotlus_puhkusetasu_ja_keskmise_tootasu_huvitamiseks)."
+  utter_EHISes_andmete_muutmine:
+  - text: "Teenus saab oma andmed Eesti Hariduse Infosüsteemist (EHIS). Õpingute andmed\
+      \ sisestab EHIS-esse õppeasutuse õppeosakond.\nKui teile kuvatakse puudulikke\
+      \ õpingute andmeid või soovite oma andmeid muuta, siis palun pöörduge andmete\
+      \ sisestamiseks kooli õppeosakonna poole.\nLisaküsimuste tekkimisel võite pöörduda\
+      \ Eesti Hariduse Infosüsteemi kasutajatoe poole telefonil 735 0577 või 735 0574\
+      \ (E-R \t9:00 - 16:00) või kirjutage e-posti teel ehis.tugi@hm.ee. Üld-, kutse-\
+      \ ja kõrghariduse õppurite ning üld- ja kutsehariduse \tõpetajate kohta on andmed\
+      \ alates 2005. aastast. Varasemaid andmeid registrisse ei kanta. Täiendavate\
+      \ küsimuste korral soovitame pöörduda EHISe kasutajatoe poole telefonidel 735\
+      \ 0577, 735 0574 (E-R 9:00 - 16:00) või kirjutada e-posti aadressil ehis.tugi@hm.ee."
+  utter_EHISes_lapse_andmete_vaatamine:
+  - text: "Enda lapse andmeid näete ainult juhul, kui eesti.ee portaali on sisenetud\
+      \ lapse ID-kaardiga, mobiil-Idga või Smart-Idga. Edasi tuleb minna \"Avaleht→E-teenused→Kodanikule→Haridus\
+      \ ja teadus→Andmed Eesti hariduse infosüsteemist (EHIS)\" või \t\t[siin](https://www.eesti.ee/est/teenused/kodanik/haridus_ja_teadus/isikukaart_eesti_ee_portaali)\
+      \ Lisaküsimuste tekkimisel \t\tvõite pöörduda Eesti Hariduse Infosüsteemi kasutajatoe\
+      \ poole telefonil 735 0577 või 735 0574 (E-R 9:00 - 16:00) või \tkirjutage e-posti\
+      \ teel ehis.tugi@hm.ee."
+  utter_EHISest_inglisekeelne_tunnistus:
+  - text: Kahjuks eesti.ee portaalist ei ole võimalik ingliskeelset tunnistust saada.
+      Ingliskeelse tunnistuse saamiseks palun pöörduge otse teenuse haldaja, Haridus-
+      ja Teadusministeeriumi poole infotelefonil +372 735 0222 või e-posti aadressil
+      hm@hm.ee.
+  utter_EHISest_lõputunnistuste_asukoht_ja_salvestamine:
+  - text: "Enda lõputunnistused leiate eesti.ee portaalis, minnes \"E-teenused - Kodanikule\
+      \ - Haridus ja teadus - Õpilase lõputunnistused\" või [siia](https://www.eesti.ee/est/teenused/kodanik/haridus_ja_teadus/opilase_loputunnistused).\
+      \ Lõputunnistuse salvestamiseks minge viidatud kohta ning seejärel kerige lehe\
+      \ lõppu, vajutage nuppu \"Salvesta > PDF > Salvesta\"\nTeenus saab oma andmed\
+      \ Eesti Hariduse Infosüsteemist (EHIS). Õpingute andmed sisestab EHIS-esse õppeasutuse\
+      \ õppeosakond. Kui teile kuvatakse puudulikke õpingute andmeid, siis palun pöörduge\
+      \ andmete sisestamiseks kooli õppeosakonna poole.\nLisaküsimuste tekkimisel\
+      \ võite pöörduda Eesti Hariduse Infosüsteemi kasutajatoe poole telefonil 735\
+      \ 0577 või 735 0574 (E-R \t9:00 - 16:00) või kirjutage e-posti teel ehis.tugi@hm.ee.\
+      \ Üld-, kutse- ja kõrghariduse õppurite ning üld- ja kutsehariduse \tõpetajate\
+      \ kohta on andmed alates 2005. aastast. Varasemaid andmeid registrisse ei kanta.\
+      \ Täiendavate küsimuste korral soovitame pöörduda EHISe kasutajatoe poole telefonidel\
+      \ 735 0577, 735 0574 (E-R 9:00 - 16:00) või kirjutada e-posti aadressil ehis.tugi@hm.ee."
+  utter_EHISest_kutsetunnistuse_asukoht_ja_salvestamine:
+  - text: "Enda kutsetunnistusi näete minnes: \"Avaleht→E-teenused→Kodanikule→Haridus\
+      \ ja teadus→Kutsetunnistused\" või (siia)[https://www.eesti.ee/est/teenused/kodanik/haridus_ja_teadus/minu_kutsetunnistused_1].\
+      \ Kutsetunnistust on viidatud kohtades võimalik salvestada, vajutades \"Esita\
+      \ päring\" ja seejärel \"Salvesta\".\nTäiendavate küsimuste korral soovitame\
+      \ pöörduda EHISe kasutajatoe poole telefonidel 735 0577, 735 0574 (E-R 9:00\
+      \ - 16:00) või kirjutada e-posti aadressil ehis.tugi@hm.ee."
+  utter_innove_eesti_keele_tasemeeksamile_registreerimine:
+  - text: 'Eesti keele tasemeeksamile saate registreeruda minnes: "Avaleht→E-teenused→Kodanikule→Haridus
+      ja teadus→Eesti keele tasemeeksamile registreerimine" või [siia](https://www.eesti.ee/est/teenused/kodanik/haridus_ja_teadus/eesti_keele_tasemeeksamile_registreerimine_1
+      Teenuse kasutamiseks tuleb siseneda välisesse süsteemi).'
+  utter_innove_eesti_keele_tasemeeksami_andmete_vaatamine:
+  - text: 'Enda eesti keele tasemeeksami andmeid saate vaadata minnes: "Avaleht→E-teenused→Kodanikule→Haridus
+      ja teadus→Eesti keele tasemeeksami andmete vaatamine" või vajutades [siia](https://www.eesti.ee/est/teenused/kodanik/haridus_ja_teadus/eesti_keele_tasemeeksamite_andmed).'
+  utter_innove_eesti_keele_tasemeeksami_tulemused_puuduvad:
+  - text: Kahjuks Riigi Infosüsteemi Amet kui eesti.ee portaali haldaja ei oma andmeid
+      Teie esitatud küsimuste osas. Palun pöörduge abi saamiseks teenuse haldaja,
+      Sihtasutus Innove (endine Riiklik Eksami- ja Kvalifikatsioonikeskus) poole infotelefonil
+      +372 735 0500 (tööpäeviti kell 8.30–17.00) või e-posti aadressil innove@innove.ee.
+  utter_innove_kodakondsuseksamile_registreerimine:
+  - text: "Kodakondsuseksamile saab registreerida ennast [eesti.ee portaalis](https://www.eesti.ee/et/minuasjad/taotlused/haridus#eksamid-kodakondsuseksamile-registreerimine)\n\
+      Lisaküsimuste tekkimisel, palun pöörduge teenuse haldaja, Sihtasutus Innove\
+      \ (endine Riiklik Eksami- ja Kvalifikatsioonikeskus) poole infotelefonil +372\
+      \ 735 0500 (tööpäeviti kell 8.30–17.00) või e-posti aadressil innove@innove.ee."
+  utter_innove_e-tunnistuse_testi_tulemuste_asukoht:
+  - text: 'Enda e-tunnistuse tulemuse leiate minnes: "Avaleht→E-teenused→Kodanikule→Haridus
+      ja teadus→Riigieksami andmed ja e-tunnistus" ehk [siin](https://www.eesti.ee/est/teenused/kodanik/haridus_ja_teadus/riigieksami_andmete_vaatamine).'
+  utter_innove_e-tunnistuse_testi_tulemused_puuduvad:
+  - text: Kahjuks Riigi Infosüsteemi Amet kui eesti.ee portaali haldaja ei oma andmeid
+      Teie esitatud küsimuste osas. Palun pöörduge abi saamiseks teenuse haldaja,
+      Sihtasutus Innove (endine Riiklik Eksami- ja Kvalifikatsioonikeskus) poole infotelefonil
+      +372 735 0500 (tööpäeviti kell 8.30–17.00) või e-posti aadressil innove@innove.ee.
+  utter_maanteeametis_juhilubade_pikendamine:
+  - text: Kahjuks Riigi Infosüsteemi Amet kui eesti.ee portaali haldaja ei oma andmeid
+      Teie esitatud küsimuste osas. Palun pöörduge abi saamiseks, teenuse haldaja,
+      Maanteeameti poole infotelefonil +372 620 1200 (E, T, K, R 9.00-17.00, N 9.00-16.00)
+      või e-posti aadressil info@mnt.ee
+  utter_maanteeametis_juhilubade_ja_tervisetõendi_andmed:
+  - text: 'Juhilubade andmeid näete minnes: "Avaleht→E-teenused→Kodanikule→Liiklus
+      ja liiklusvahendid→Juhilubade päring" või [siin](https://www.eesti.ee/est/teenused/kodanik/liiklus_ja_liiklusvahendid/jlparing1).'
+  utter_ID-kaart_juhilubade_asemel:
+  - text: Kahjuks Riigi Infosüsteemi Amet kui eesti.ee portaali haldaja ei oma andmeid
+      Teie esitatud küsimuste osas. Palun pöörduge abi saamiseks, teenuse haldaja,
+      Maanteeameti poole infotelefonil +372 620 1200 (E, T, K, R 9.00-17.00, N 9.00-16.00)
+      või e-posti aadressil info@mnt.ee
+  utter_RIKi_notariaalsete_dokumentide_asukoht:
+  - text: "Notariaalsete dokumentide nägemiseks eraisikule palun Teil riigiportaali\
+      \ www.eesti.ee sisse logida kas Mobiil-ID või ID-kaardi abil (panga kaudu ID-kaardiga\
+      \ sisenedes või pangaparoolidega sisse logides dokumente ei näe). Seejärel valige\
+      \ „Minu andmed -> Juriidika -> Notariaalsed dokumendid“.\n[Otselink teenusele.](https://www.eesti.ee/et/minuasjad/andmed/juriidika)"
+  utter_RIKi_kinnistu_andmete_asukoht:
+  - text: 'Endaga seotud kinnistuid saate näha minnes: "Avaleht→E-teenused→Kodanikule→Raha
+      ja omand→Kodaniku kinnistud" või [siin](https://www.eesti.ee/est/teenused/kodanik/raha_ja_omand_1/kodaniku_kinnistud_1)'
+  utter_RIKis_kinnistu_andmed_puuduvad:
+  - text: Palun pöörduge abi saamiseks e-kinnistusraamatu haldaja, Registrite ja Infosüsteemide
+      Keskuse poole telefonil +372 680 3160 (tööpäevadel 9:00-17:00) või e-posti aadressil
+      rik.info@rik.ee. Kahjuks RIA kui eesti.ee portaali haldaja ei oma andmeid Teie
+      esitatud küsimuste osas.
+  utter_RIAs_elukoha_andmete_muutmine:
+  - text: Elukoha aadressi registreerimiseks või uuendamiseks palun minge [viitele](https://www.rahvastikuregister.ee/).
+      Lisaküsimuste tekkel palun pöörduge abi saamiseks rahvastikuregistri teenuste
+      haldaja, Siseministeeriumi infotehnoloogia- ja arenduskeskuse poole infotelefonil
+      +372 612 4444 ( E-R 8:15-17:00) või e-posti aadressil abi@rahvastikuregister.ee.
+  utter_RIAs_enda_või_lapse_passi_andmed:
+  - text: Enda või lapse dokumendi numbrit näete minnes eesti.ee lehel "Avaleht→E-teenused→Kodanikule→Perekond→Enda
+      ja oma alaealiste laste andmete päring (rahvastikuregister)" või [siia](https://www.eesti.ee/est/perekond_1/isikkodanik).
+      Lisaküsimuste tekkel palun pöörduge abi saamiseks rahvastikuregistri teenuste
+      haldaja, Siseministeeriumi infotehnoloogia- ja arenduskeskuse poole infotelefonil
+      +372 612 4444 ( E-R 8:15-17:00) või e-posti aadressil abi@rahvastikuregister.ee.
+  utter_RIAs_lapse_andmed_puuduvad_või_on_valed_rahvastikuregistris:
+  - text: Kahjuks Riigi Infosüsteemi Amet kui eesti.ee portaali haldaja ei oma andmeid
+      Teie esitatud küsimuste osas. Palun pöörduge abi saamiseks rahvastikuregistri
+      teenuste haldaja, Siseministeeriumi infotehnoloogia- ja arenduskeskuse poole
+      infotelefonil +372 612 4444 ( E-R 8:15-17:00) või e-posti aadressil abi@rahvastikuregister.ee.
+  utter_Sotsiaalkindlustusameti_A1_tõendi_esitamisel_viga:
+  - text: "Palun kontrollige, et olete tõendi täitmisel valinud ettevõtja teenuse,\
+      \ mitte ametniku. Taotluse esitamiseks palun minge eesti.ee lehel \"Avaleht→E-teenused→Ettevõtjale→Töökeskkond\
+      \ ja personal→Tõendi A1 (E101) taotlemine ettevõtjana\" ([link](https://www.eesti.ee/est/teenused/ettevotja/tookeskkond_ja_personal_1/toendi_a1_e101_taotlemine_ettevotjana/toendi_a1_e101_taotlemine_ettevotjana_1)).\n\
+      Lisaküsimuste tekkimisel palun pöörduge teenuse haldaja, Sotsiaalkindlustusameti\
+      \ poole infotelefonil +372 612 1360 (Infotelefon töötab igal tööpäeval kella\
+      \ 09.00 – 17.00 ning Iga kuu viimasel reedel kella 09.00 – 13.00) või e-posti\
+      \ aadressil info@sotsiaalkindlustusamet.ee."
+  utter_Sotsiaalkindlustusameti_A1_tõendi_taotlemine:
+  - text: "Palun kontrollige, et olete tõendi täitmisel valinud ettevõtja teenuse,\
+      \ mitte ametniku. Taotluse esitamiseks palun minge eesti.ee lehel \"Avaleht→E-teenused→Ettevõtjale→Töökeskkond\
+      \ ja personal→Tõendi A1 (E101) taotlemine ettevõtjana\" ([viide](https://www.eesti.ee/est/teenused/ettevotja/tookeskkond_ja_personal_1/toendi_a1_e101_taotlemine_ettevotjana/toendi_a1_e101_taotlemine_ettevotjana_1)).\n\
+      Lisaküsimuste tekkimisel palun pöörduge teenuse haldaja, Sotsiaalkindlustusameti\
+      \ poole infotelefonil +372 612 1360 (Infotelefon töötab igal tööpäeval kella\
+      \ 09.00 – 17.00 ning Iga kuu viimasel reedel kella 09.00 – 13.00) või e-posti\
+      \ aadressil info@sotsiaalkindlustusamet.ee."
+  utter_Sotsiaalkindlustusametis_pensioni_suuruse_vaatamine:
+  - text: 'Enda pensioni, toetusi ja hüvitisi näete eesti.ee minnes: "Avaleht→E-teenused→Kodanikule→Perekond→Pensioni,
+      toetuste ja hüvitiste vaatamine" ([viide](https://www.eesti.ee/est/teenused/kodanik/perekond_1/teie_pension_toetused_ja_huvitised))'
+  utter_Sotsiaalkindlustusametis_muu_küsimus_pensioni_kohta:
+  - text: Kahjuks Riigi Infosüsteemi Amet, kui eesti.ee portaali haldaja ei oma informatsiooni
+      Teie esitatud küsimuste osas. Palun pöörduge abi saamiseks teenuse haldaja,
+      Sotsiaalkindlustusameti poole infotelefonil +372 612 1360 (Infotelefon töötab
+      igal tööpäeval kella 09.00 – 17.00 ning Iga kuu viimasel reedel kella 09.00
+      – 13.00) või e-posti aadressil info@sotsiaalkindlustusamet.ee.
+  utter_Sotsiaalkindlustusametis_kuidas_arvutada_minu_pensionit_tulevikus:
+  - text: "Selleks, et arvutada pensioni suurust palun minge eesti.ee lehel Avaleht→E-teenused→Kodanikule→Toetused\
+      \ ja sotsiaalabi→Pensionikalkulaator ([viide](https://www.eesti.ee/est/teenused/kodanik/toetused_ja_sotsiaalabi_1/pensionikalkulaator))\n\
+      Lisaküsimuste tekkel palun pöörduge abi saamiseks teenuse haldaja, Sotsiaalkindlustusameti\
+      \ poole infotelefonil +372 612 1360 (Infotelefon töötab igal tööpäeval kella\
+      \ 09.00 – 17.00 ning Iga kuu viimasel reedel kella 09.00 – 13.00) või e-posti\
+      \ aadressil info@sotsiaalkindlustusamet.ee."
+  utter_Sotsiaalkindlustusametile_puhkusetasu_või_keskmise_töötasu_hüvitamise_taotlusel_andmete_muutmine:
+  - text:
+  utter_default:
+  - text: Vabandust, ma ei saanud aru. Kas suunan teid klienditeenindaja poole?
+  utter_ask_affirmation:
+  - text: Kas mõtlesite
+  utter_ask_rephrase:
+  - text: Palun sõnastage küsimus uuesti. Ma ei saanud aru.
+  utter_pole_tänu_väärt:
+  - text: Oli hea meel aidata!

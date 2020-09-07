@@ -1,0 +1,35 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: et_model
+
+pipeline:
+  - name: SpacyNLP
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: word
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+
+policies:
+  - name: MemoizationPolicy
+    max_history: 5
+  - name: TEDPolicy
+    epochs: 100
+  - name: MappingPolicy
+  - name: TwoStageFallbackPolicy
+    nlu_threshold: 0.8
+    ambiguity_threshold: 0.1
+    core_threshold: 0.8
+    fallback_core_action_name: "action_default_fallback"
+    fallback_nlu_action_name: "action_default_fallback"
+    deny_suggestion_intent_name: "out_of_scope"
+  
+ 

@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  texta-rasa:
+    container_name: texta-rasa
+    image: docker.texta.ee/texta/texta-rasa:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5005:5005
+    #env_file:
+    #  - ./env
+    volumes:
+      - ./texta-rasa-data:/var/texta-rasa/data
+    #depends_on:
+    #  - texta-postgres
+    #  - texta-elasticsearch
+
